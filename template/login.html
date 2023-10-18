@@ -1,0 +1,44 @@
+{% extends 'nav.html' %}
+{% load static %}
+
+{% block content %}
+<div class="login">
+
+<div class="log">
+
+<form action="" method="post">
+    {% csrf_token %}
+<!--  <div class="imgcontainer">-->
+<!--    <img src="img_avatar2.png" alt="Avatar" class="avatar">-->
+<!--  </div>-->
+
+  <div class="container">
+       <h2> SCHOOL.STORE</h2><br>
+
+      <table>
+      <tr>
+        <td><label for="uname"><b>Username</b></label></td>
+   <td> <input type="text" placeholder="Enter Username" name="name" ></td>
+    </tr>
+          <tr>
+    <td><label for="psw"><b>Password</b></label></td>
+   <td><input type="password" placeholder="Enter Password" name="password" ></td>
+          </tr>
+      </table>
+    <div class="logbtn">
+     <button class="btn btn-warning" type="submit">Login</button>
+<!--    <label>-->
+<!--      <input type="checkbox" checked="checked" name="remember"> Remember me-->
+<!--    </label>-->
+        <div class="container1" >
+
+    <a href="{% url 'sapp:reg' %}">signup</a>
+  </div>
+  </div>
+
+
+</form>
+</div>
+</div>
+
+{% endblock %}

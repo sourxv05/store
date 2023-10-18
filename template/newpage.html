@@ -1,0 +1,22 @@
+{% extends 'nav.html' %}
+{% load static %}
+
+{% block content %}
+
+
+<!--          <img align=”right”  src="{% static 'img/banner2.png' %}" alt="our product" width="500" height="500" >-->
+<!-- <h1>GeeksforGeeks</h1>-->
+
+    <h3 class="new">{{user.name}}Let's get started</h3>
+    <h1 class="new">with a few details</h1>
+    <p>
+       <H4 class="tnx"> Thank you for registering with our SCHOOL.STORE service.To activate your acoount please setup your profile</H4>
+    </p>
+    <!-- Keep align attribute value as right -->
+    <img align="right" src="{% static 'img/banner2.png' %}" alt=""  width="500" height="500">
+    <div class="btn2">
+        <a class="btn btn-warning" href="{% url 'sapp:profile' %}">Get Started</a>
+
+    </div>
+
+{% endblock %}
